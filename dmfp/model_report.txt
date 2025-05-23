@@ -1,0 +1,38 @@
+
+# Amazon Product Rating Prediction Model Report
+
+## 1. Data Overview
+- Total sample count: 1464
+- Feature count: 110
+- Rating range: 2.00 - 5.00
+- Average rating: 4.10 ± 0.29
+
+## 2. Model Performance Comparison
+               Model  Train R²   Test R²  Test MSE  Test MAE  CV Mean R²  CV Std R²
+1      Random Forest  0.895837  0.260429  0.071345  0.177526    0.206508   0.073766
+2  Gradient Boosting  0.606092  0.240540  0.073264  0.190215    0.119089   0.070290
+3            XGBoost  0.977999  0.233673  0.073926  0.179369    0.098494   0.100063
+0  Linear Regression  0.271718  0.125209  0.084389  0.203895    0.071620   0.066784
+
+## 3. Best Model
+- Model type: Random Forest
+- Test set R²: 0.2604
+- Test set MAE: 0.1775
+- Test set MSE: 0.0713
+
+## 4. Accuracy Analysis
+Prediction accuracy within ±0.5 rating points:
+Linear Regression    93.174061
+Random Forest        93.856655
+Gradient Boosting    94.197952
+XGBoost              93.856655
+
+## 5. Business Insight
+1. Most important features include rating count, price-related features, and product description
+2. Suggest merchants focus on product description quality and reasonable pricing
+3. Encourage more user ratings to improve product credibility
+
+## 6. Model Application Suggestions
+- Random Forest model performs best on this dataset
+- Model can be used to predict potential ratings for new products
+- Suggest regularly updating the model to maintain prediction accuracy

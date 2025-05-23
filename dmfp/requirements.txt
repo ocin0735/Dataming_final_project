@@ -1,0 +1,25 @@
+# Amazon Product Rating Prediction Project Dependency Package
+# Installation command: pip install -r requirements.txt
+
+# Core Data Science Library
+numpy>=1.19.0
+pandas>=1.1.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+
+# Machine Learning Library
+scikit-learn>=0.24.0
+xgboost>=1.4.0
+joblib>=1.0.0
+scipy>=1.6.0
+
+# Jupyter Environment (for running.ipynb files)
+Jupyter > = 1.0.0
+Ipykernel > = 6.0.0
+
+# Text Processing
+Me > = 3.6.0
+
+# Other practical tools
+tqdm>=4.62.0 # Progress bar
+warnings # Built-in library for ignoring warnings
