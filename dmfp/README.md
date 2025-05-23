@@ -71,7 +71,7 @@ This project uses an Amazon product dataset, covering various categories and rat
 
 **Field Description:**
 
-| Field Name         | Type   | Description                                 |
+| Field Name         |类型|描述|
 |--------------------|--------|---------------------------------------------|
 | product_name       | text   | Product name                                |
 | category           | text   | Category hierarchy, separated by '|'        |
@@ -161,9 +161,7 @@ Feature engineering includes:
 ## Example Results
 
 After training, the `model_results/` directory will contain:
-- Model performance comparison charts
 - Best model detailed analysis
-- Various evaluation reports
 - Model files (for prediction)
 
 ## Author
